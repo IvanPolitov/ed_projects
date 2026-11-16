@@ -1,0 +1,20 @@
+[project]
+name = "ed-projects"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "IvanPolitov", email = "ivan.hanter21@mail.ru" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "fastapi>=0.163.1",
+    "pytest>=9.2.0",
+]
+
+[project.scripts]
+ed-projects = "ed_projects:main"
+
+[build-system]
+requires = ["uv_build>=0.13.1,<0.14.0"]
+build-backend = "uv_build"
